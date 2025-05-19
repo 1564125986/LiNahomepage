@@ -1,0 +1,163 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4c4b54;
+  background-color: #f6f6f6;
+}
+
+#wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #dcd4f5;
+}
+
+#headerleft {
+  flex: 1;
+}
+
+#wsite-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #7c72b6;
+  text-decoration: none;
+}
+
+/* Navigation Styles */
+#navigation {
+  flex: 2;
+  text-align: right;
+}
+
+#navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navigation li {
+  margin-left: 20px;
+  position: relative;
+}
+
+#navigation a {
+  text-decoration: none;
+  color: #7c7c7c;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+#navigation a:hover {
+  color: #7c72b6;
+}
+
+#active a {
+  color: #7c72b6;
+}
+
+/* Content Styles */
+#content {
+  padding: 20px;
+}
+
+.wsite-multicol-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.wsite-multicol-tbody {
+  width: 100%;
+}
+
+.wsite-multicol-col {
+  vertical-align: top;
+  padding: 15px;
+}
+
+.wsite-image img {
+  border: 1px solid #dcd4f5;
+  padding: 5px;
+}
+
+/* Typography */
+h2 {
+  margin-top: 0;
+  color: #4c4b54;
+}
+
+a {
+  color: #7c72b6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Awards List */
+#awards_list, #experience_list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.awards_item, .experience_item {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.awards_item:before, .experience_item:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #7c72b6;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #navigation ul {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .wsite-multicol-table,
+  .wsite-multicol-tbody,
+  .wsite-multicol-tr,
+  .wsite-multicol-col {
+    display: block;
+    width: 100% !important;
+  }
+}
+
+.block_title {
+  border-bottom: 1px solid #dcd4f5;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
